@@ -1,0 +1,39 @@
+{
+	"schemaVersion": 1,
+	"id": "template-ores",
+	"version": "${version}",
+	"name": "template-ores",
+	"description": "This is a template mod of ores made by raponikt",
+	"authors": [
+		"raponikt"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.raponis.templateores.TemplateOres"
+		],
+		"client": [
+			"net.raponis.templateores.TemplateOresClient"
+		],
+		"fabric-datagen": [
+          "net.raponis.templateores.TemplateOresDataGenerator"
+		]
+	},
+	"mixins": [
+		"template-ores.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.6",
+		"minecraft": "~1.20.4",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
